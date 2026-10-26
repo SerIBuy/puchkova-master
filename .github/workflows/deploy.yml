@@ -1,0 +1,30 @@
+
+name: Sync to Yandex Object Storage
+
+on:
+  push:
+    branches: [ main ]
+
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Sync files to Yandex Object Storage
+        run: |
+          aws s3 sync \
+            --endpoint-url=https://storage.yandexcloud.net \
+            --delete \
+            --acl public-read \
+            . \
+            s3://"${{ secrets.S3_BUCKET_NAME }}" \
+            --exclude ".git/*" \
+            --exclude ".github/*"
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.YC_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.YC_SECRET_ACCESS_KEY }}
