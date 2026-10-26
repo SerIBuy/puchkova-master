@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Тёплый штрих — парикмахерская для женщин и мужчин</title>
+    <meta
+      name="description"
+      content="Стрижки, окрашивание, укладки и уход за волосами в салоне «Тёплый штрих». Запишитесь на визит онлайн или по телефону."
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Тёплый штрих — парикмахерская для женщин и мужчин" />
+    <meta
+      property="og:description"
+      content="Стрижки, окрашивание, укладки и уход за волосами с вниманием к каждой детали."
+    />
+    <meta property="og:image" content="images/og-cover.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-inner">
+        <a href="#top" class="header-logo">Мастер Пучкова</a>
+
+        <nav class="nav-desktop" aria-label="Основная навигация">
+          <ul>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#about">О салоне</a></li>
+            <li><a href="#gallery">Работы</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <a href="#booking" class="btn btnPrimary cta-desktop">Записаться</a>
+
+        <button
+          type="button"
+          class="burger"
+          id="burgerBtn"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <span class="burger-span"></span>
+        </button>
+      </div>
+
+      <div id="mobile-nav" class="mobile-panel">
+        <nav aria-label="Мобильная навигация">
+          <ul>
+            <li><a href="#services" class="mobile-link">Услуги</a></li>
+            <li><a href="#about" class="mobile-link">О салоне</a></li>
+            <li><a href="#gallery" class="mobile-link">Работы</a></li>
+            <li><a href="#contacts" class="mobile-link">Контакты</a></li>
+          </ul>
+        </nav>
+        <a href="#booking" class="btn btnPrimary btnHidden mobile-link">Записаться</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="top" class="hero" aria-label="Главный экран">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1 class="hero-title">Твоя красота. Твой стиль. Твоё время.</h1>
+            <p class="hero-subtitle">Стрижки, окрашивание и уход с вниманием к каждой детали.</p>
+            <a href="#booking" class="btn btnPrimary hero-cta btnHidden">Записаться на визит</a>
+          </div>
+
+          <div class="hero-image-wrap">
+            <img
+              src="images/hero.jpg"
+              alt="Мастер салона укладывает волосы клиентки в светлом уютном интерьере"
+              class="hero-image"
+              width="1200"
+              height="1500"
+              fetchpriority="high"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section services-section" aria-label="Услуги">
+        <div class="container">
+          <h2 class="sectionHeading">Услуги</h2>
+
+          <div class="services-grid">
+            <article class="service-card">
+              <img
+                src="images/work-1.jpeg"
+                alt="Стрижка в салоне «Тёплый штрих»"
+                class="service-image"
+                width="800"
+                height="600"
+                loading="lazy"
+              />
+              <div class="service-body">
+                <h3 class="service-title">Стрижки</h3>
+                <p class="service-description">Женские и мужские стрижки — от классики до смелых форм.</p>
+                <div class="service-meta">
+                  <span>от 1000 ₽</span>
+                  <span aria-hidden="true">·</span>
+                  <span>40 мин</span>
+                </div>
+                <a href="#contacts" class="btnLink">Уточнить стоимость</a>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <img
+                src="images/work-2.jpeg"
+                alt="Окрашивание волос в салоне «Тёплый штрих»"
+                class="service-image"
+                width="800"
+                height="600"
+                loading="lazy"
+              />
+              <div class="service-body">
+                <h3 class="service-title">Окрашивание</h3>
+                <p class="service-description">Подбор оттенка и обновление цвета с заботой о волосах.</p>
+                <div class="service-meta">
+                  <span>от 1000 ₽</span>
+                  <span aria-hidden="true">·</span>
+                  <span>30 мин</span>
+                </div>
+                <a href="#contacts" class="btnLink">Уточнить стоимость</a>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <img
+                src="images/work-3.jpeg"
+                alt="Укладка волос в салоне «Тёплый штрих»"
+                class="service-image"
+                width="800"
+                height="600"
+                loading="lazy"
+              />
+              <div class="service-body">
+                <h3 class="service-title">Укладки</h3>
+                <p class="service-description">На каждый день и особые случаи — укладки под настроение.</p>
+                <div class="service-meta">
+                  <span>от 1000 ₽</span>
+                  <span aria-hidden="true">·</span>
+                  <span>30 мин</span>
+                </div>
+                <a href="#contacts" class="btnLink">Уточнить стоимость</a>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <img
+                src="images/work-4.jpg"
+                alt="Процедура ухода за волосами в салоне «Тёплый штрих»"
+                class="service-image"
+                width="800"
+                height="600"
+                loading="lazy"
+              />
+              <div class="service-body">
+                <h3 class="service-title">Уход за волосами</h3>
+                <p class="service-description">Увлажнение и восстановление для здоровья и блеска волос.</p>
+                <div class="service-meta">
+                  <span>от 1000 ₽</span>
+                  <span aria-hidden="true">·</span>
+                  <span>30 мин</span>
+                </div>
+                <a href="#contacts" class="btnLink">Уточнить стоимость</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section section--alt about-section" aria-label="О салоне">
+        <div class="container about-inner">
+          <div class="about-image-wrap">
+            <img
+              src="images/interior.jpeg"
+              alt="Интерьер салона «Тёплый штрих»"
+              class="about-image"
+              width="1200"
+              height="900"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="about-content">
+            <h2 class="sectionHeading">Место, куда хочется возвращаться</h2>
+            <p class="about-text">
+              Мы верим, что хорошая стрижка начинается с диалога. Выслушаем твои пожелания, поможем подобрать
+              образ и позаботимся о комфорте во время визита.
+            </p>
+
+            <ul class="advantages">
+              <li class="advantage">
+                <h3 class="advantage-title">Индивидуальный подход</h3>
+                <p class="advantage-text">Учитываем структуру волос, форму лица и образ жизни.</p>
+              </li>
+              <li class="advantage">
+                <h3 class="advantage-title">Уютная атмосфера</h3>
+                <p class="advantage-text">Светлый интерьер и внимательное отношение к каждому гостю.</p>
+              </li>
+              <li class="advantage">
+                <h3 class="advantage-title">Качественные средства</h3>
+                <p class="advantage-text">Используем профессиональную косметику для волос.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section" aria-label="Галерея работ">
+        <div class="container">
+          <h2 class="sectionHeading">Красота в деталях</h2>
+
+          <div class="gallery-grid" id="galleryGrid">
+            <button type="button" class="gallery-item" data-index="0">
+              <img src="images/gallery-1.jpg" alt="Работа мастера салона «Тёплый штрих» — пример 1" class="gallery-image" loading="lazy" />
+            </button>
+            <button type="button" class="gallery-item" data-index="1">
+              <img src="images/gallery-2.jpg" alt="Работа мастера салона «Тёплый штрих» — пример 2" class="gallery-image" loading="lazy" />
+            </button>
+            <button type="button" class="gallery-item" data-index="2">
+              <img src="images/gallery-3.jpg" alt="Работа мастера салона «Тёплый штрих» — пример 3" class="gallery-image" loading="lazy" />
+            </button>
+            <button type="button" class="gallery-item" data-index="3">
+              <img src="images/gallery-4.jpg" alt="Работа мастера салона «Тёплый штрих» — пример 4" class="gallery-image" loading="lazy" />
+            </button>
+            <button type="button" class="gallery-item" data-index="4">
+              <img src="images/gallery-5.jpg" alt="Работа мастера салона «Тёплый штрих» — пример 5" class="gallery-image" loading="lazy" />
+            </button>
+            <button type="button" class="gallery-item" data-index="5">
+              <img src="images/gallery-6.jpg" alt="Работа мастера салона «Тёплый штрих» — пример 6" class="gallery-image" loading="lazy" />
+            </button>
+          </div>
+        </div>
+
+        <div class="lightbox-overlay" id="lightbox" role="dialog" aria-modal="true" aria-label="Просмотр фотографии" tabindex="-1" hidden>
+          <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Закрыть просмотр">×</button>
+          <button type="button" class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Предыдущее фото">‹</button>
+          <img src="" alt="" class="lightbox-image" id="lightboxImage" />
+          <button type="button" class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Следующее фото">›</button>
+          <p class="lightbox-counter" id="lightboxCounter"></p>
+        </div>
+      </section>
+
+      <section id="booking" class="section section--alt booking-section" aria-label="Запись">
+        <div class="container booking-inner">
+          <h2 class="sectionHeading">Время для себя</h2>
+          <p class="sectionSubheading">Выбери удобный способ связи — мы поможем подобрать время.</p>
+
+          <div class="booking-actions">
+            <a href="tel:+79931867314" class="btn btnPrimary">Позвонить в салон</a>
+            <a
+              href="https://max.ru/u/f9LHodD0cOIFHnUebk6zxzLu83_-15choJVL3q82IE28JQF58vDV3yZN488"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="btn btnOutline"
+            >
+              Написать в MAX
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contacts" class="footer" aria-label="Контакты">
+      <div class="container footer-inner">
+        <div class="footer-info">
+          <p class="footer-brand">Мастер Пучкова</p>
+
+          <dl class="footer-list">
+            <div class="footer-row">
+              <dt>Адрес</dt>
+              <dd>Московская, 108</dd>
+            </div>
+            <div class="footer-row">
+              <dt>Часы работы</dt>
+              <dd>Часы работы уточняются</dd>
+            </div>
+            <div class="footer-row">
+              <dt>Телефон</dt>
+              <dd><a href="tel:+79931867314">PLACEHOLDER_PHONE</a></dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="map-wrap">
+          <div class="map-placeholder">Карта появится после указания адреса</div>
+        </div>
+      </div>
+
+      <p class="footer-copy">© <span id="year"></span> Мастер Пучкова</p>
+    </footer>
+
+    <div class="mobile-bar" id="mobileBar" role="region" aria-label="Быстрая запись">
+      <a href="tel:+79931867314" class="btn btnPrimary mobile-bar-btn">Позвонить</a>
+      <a
+        href="https://max.ru/u/f9LHodD0cOIFHnUebk6zxzLu83_-15choJVL3q82IE28JQF58vDV3yZN488"
+        target="_blank"
+        rel="noreferrer noopener"
+        class="btn btnOutline mobile-bar-btn"
+      >
+        Написать в MAX
+      </a>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
